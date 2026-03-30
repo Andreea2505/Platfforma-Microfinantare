@@ -1,0 +1,87 @@
+@startuml microfinantare
+entity BENEFICIAR {
+  +id_beneficiar : int <<PK>>
+  nume : varchar
+  email : varchar
+  telefon : varchar
+}
+
+entity INVESTITOR {
+  +id_investitor : int <<PK>>
+  nume : varchar
+  email : varchar
+  
+}
+
+entity PROIECT {
+  +id_proiect : int <<PK>>
+  titlu : varchar
+  descriere:varchar
+  id_beneficiar : int <<FK>>
+}
+
+entity CERERE_FINANTARE {
+  +id_cerere : int <<PK>>
+  data_cerere : date
+  suma_solicitata : number
+  status : varchar
+  id_proiect : int <<FK>>
+}
+
+entity CONTRACT {
+  +id_contract : int <<PK>>
+  dobanda : number
+  durata_luni : int
+  id_proiect : int <<FK>>
+}
+
+entity INVESTITIE {
+  +id_investitor : int <<PK,FK>>
+  +id_proiect : int <<PK,FK>>
+  +id_contract : int <<PK,FK>>
+  suma_investita : number
+  data_investitie : date
+}
+
+entity PLAN_RAMBURSARE {
+  +id_plan : int <<PK>>
+  suma_totala : number
+  nr_luni : int
+  id_contract : int <<FK>>
+}
+
+entity RATA {
+  +id_rata : int <<PK>>
+  suma : number
+  data_scadenta : date
+  status : varchar
+  id_plan : int <<FK>>
+}
+
+
+entity DOMENIU {
+  +id_domeniu : int <<PK>>
+  nume_domeniu : varchar
+}
+
+entity PROIECT_DOMENIU {
+  +id_proiect : int <<PK,FK>>
+  +id_domeniu : int <<PK,FK>>
+}
+
+' Relatii
+BENEFICIAR ||--o{ PROIECT
+PROIECT ||--|| CERERE_FINANTARE
+
+INVESTITOR ||--o{ INVESTITIE
+PROIECT ||--o{ INVESTITIE
+CONTRACT ||--o{ INVESTITIE
+
+CONTRACT ||--|| PLAN_RAMBURSARE
+CONTRACT ||--|| PROIECT
+PLAN_RAMBURSARE ||--o{ RATA
+
+PROIECT ||--o{ PROIECT_DOMENIU
+DOMENIU ||--o{ PROIECT_DOMENIU
+
+@enduml
