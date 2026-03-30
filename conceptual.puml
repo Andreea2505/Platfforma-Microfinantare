@@ -68,8 +68,6 @@ entity PROIECT_DOMENIU {
   +id_proiect : int <<PK,FK>>
   +id_domeniu : int <<PK,FK>>
 }
-
-' Relatii
 BENEFICIAR ||--o{ PROIECT
 PROIECT ||--|| CERERE_FINANTARE
 
