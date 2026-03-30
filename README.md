@@ -211,16 +211,20 @@ Implementată prin tabelul asociativ PROIECT_DOMENIU, deoarece:
 - Numărul de rate trebuie să fie pozitiv și stabilit la crearea planului de rambursare
 - Un proiect trebuie să aparțină cel puțin unui domeniu
 - Nu pot exista investtii fara contract
-
 ---
 
-##Diagrama erd
+## Diagrama ERD
+
 <img width="769" height="400" alt="image" src="https://github.com/user-attachments/assets/919dc37e-59f6-42e5-b641-4ba5be36f35e" />
+
 <img width="636" height="641" alt="Diagramă fără titlu drawio" src="https://github.com/user-attachments/assets/f06fdf33-99e2-4a67-84e8-8cbc323bf4dd" />
----
-##Diagrama conceptuala
-<img width="787" height="431" alt="image" src="https://github.com/user-attachments/assets/2daa7dcd-e57e-483b-a1c8-e7ed2a5e839d" />
+
 ---
 
-<img width="787" height="431" alt="image" src="https://github.com/user-attachments/assets/21198b60-16f4-431b-adbd-6cbcb856e06c" />
-investiții fără contract
+## Diagrama conceptuală
+
+<img width="787" height="431" alt="image" src="https://github.com/user-attachments/assets/2daa7dcd-e57e-483b-a1c8-e7ed2a5e839d" />
+
+---
+---
+
