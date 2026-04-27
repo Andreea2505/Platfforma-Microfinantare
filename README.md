@@ -252,8 +252,6 @@ Implementată prin tabelul asociativ PROIECT_DOMENIU, deoarece:
 <img width="636" height="641" alt="Diagramă fără titlu drawio" src="https://github.com/user-attachments/assets/f06fdf33-99e2-4a67-84e8-8cbc323bf4dd" />
 
 ---
-## Diagrama conceptuala 
-<img width="1325" height="821" alt="image" src="https://github.com/user-attachments/assets/0de3e7ab-b1b7-4159-bb8c-606e5d1529dc" />
 
 ## Diagrama conceptuală
 <img width="1325" height="821" alt="image" src="https://github.com/user-attachments/assets/b210b8b4-acf8-4732-9aa0-614219b1e3b5" />
