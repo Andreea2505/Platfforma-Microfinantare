@@ -254,7 +254,7 @@ Implementată prin tabelul asociativ PROIECT_DOMENIU, deoarece:
 ---
 
 ## Diagrama conceptuală
+<img width="1325" height="821" alt="image" src="https://github.com/user-attachments/assets/b210b8b4-acf8-4732-9aa0-614219b1e3b5" />
 
-<img width="787" height="431" alt="image" src="https://github.com/user-attachments/assets/2daa7dcd-e57e-483b-a1c8-e7ed2a5e839d" />
-
+a
 ---
