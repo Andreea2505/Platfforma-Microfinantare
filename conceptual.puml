@@ -68,6 +68,20 @@ entity PROIECT_DOMENIU {
   +id_proiect : int <<PK,FK>>
   +id_domeniu : int <<PK,FK>>
 }
+entity TRANZACTIE_RATA {
+  +id_tranzactie : int <<PK>>
+  suma_platita : number
+  data_plata : date
+  id_rata : int <<FK>>
+}
+
+entity DOCUMENT {
+  +id_document : int <<PK>>
+  tip_document : varchar
+  nume_fisier : varchar
+  data_incarcare : date
+  id_proiect : int <<FK>>
+}
 BENEFICIAR ||--o{ PROIECT
 PROIECT ||--|| CERERE_FINANTARE
 
@@ -81,5 +95,8 @@ PLAN_RAMBURSARE ||--o{ RATA
 
 PROIECT ||--o{ PROIECT_DOMENIU
 DOMENIU ||--o{ PROIECT_DOMENIU
+
+RATA ||--o{ TRANZACTIE_RATA
+PROIECT ||--o{ DOCUMENT
 
 @enduml
