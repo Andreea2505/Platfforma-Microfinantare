@@ -8,11 +8,11 @@ Proiectul reprezintă o platformă de microfinanțare. Acesta gestionează modal
 
 ### Fluxul aplicației
 
-Un beneficiar creează un proiect. Pentru proiectul respectiv se creează o cerere de finanțare, în cadrul căreia se stabilește dacă proiectul este eligibil de finanțare sau nu. Dacă proiectul este aprobat, primește finanțare.
+Un beneficiar creează un proiect. Pentru proiectul respectiv se creează o cerere de finanțare, în cadrul căreia se stabilește dacă proiectul este eligibil de finanțare sau nu. Dacă proiectul este aprobat, primește finanțare si se creeaza documentele.
 
 Investitorii sunt persoanele care finanțează proiectele. Un investitor poate investi în mai multe proiecte și un proiect poate fi finanțat de mai mulți investitori. După ce suficienți investitori fac investiții într-un proiect, se creează contractul, care este unic per proiect.
 
-Pentru suma din contract se stabilește planul de rambursare, plata sumei fiind împărțită în rate.
+Pentru suma din contract se stabilește planul de rambursare, plata sumei fiind împărțită în rate si acestea la randul lor in tranzactii.
 
 ---
 
@@ -126,6 +126,27 @@ Tabel asociativ dintre proiect și domeniu.
 - id_domeniu (PK, FK)
 
 ---
+### 11) TRANZACTIE-RATA
+O rata poate fii platita integral sau in mai multe rate,fiecare fiind inregistrata ca o tranzactie.
+
+**Atribute:**
+- id_tranzactie (PK)
+- suma_platita
+- data_plata
+- id_rata (FK)
+
+---
+### 12)DOCUMENT
+Documentele asociate unui proiect dupa aprobarea acestuia.
+
+**Atribute:**
+- id_document (PK)
+- tip_document
+- nume_fisier
+- data_incarcare
+- id_proiect (FK)
+
+---
 
 ## III) Relații dintre entități
 
@@ -201,6 +222,17 @@ Implementată prin tabelul asociativ PROIECT_DOMENIU, deoarece:
 - unui contract se creează pentru un singur proiect
 - unui proiect îi corespunde un singur contract
 
+---
+### 11) Rata : Tranzactie_Rata (1:N)
+
+- o rata poate avea mai multe tranzactii
+- o tranzactie apatine unei singure rate 
+
+---
+### 12) Proiect : Document  (1:N)
+
+- un proiect poate avea mai multe documente
+- un document ii corespunde unui singur proiect 
 ---
 
 ## IV) Restricții impuse
