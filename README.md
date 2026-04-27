@@ -229,10 +229,10 @@ Implementată prin tabelul asociativ PROIECT_DOMENIU, deoarece:
 - o tranzactie apatine unei singure rate 
 
 ---
-### 12) Proiect : Document  (1:N)
+### 12) Cerere_Finantare : Document  (1:N)
 
-- un proiect poate avea mai multe documente
-- un document ii corespunde unui singur proiect 
+- o cerere de finantare poate avea mai multe documente
+- un document ii corespunde unei singuri cereri de finantare 
 ---
 
 ## IV) Restricții impuse
@@ -246,8 +246,7 @@ Implementată prin tabelul asociativ PROIECT_DOMENIU, deoarece:
 ---
 
 ## Diagrama ERD
-
-<img width="769" height="400" alt="image" src="https://github.com/user-attachments/assets/919dc37e-59f6-42e5-b641-4ba5be36f35e" />
+<img width="899" height="683" alt="image" src="https://github.com/user-attachments/assets/14ce8a3c-e98e-4261-85ad-d3ba7e5df0f4" />
 
 <img width="636" height="641" alt="Diagramă fără titlu drawio" src="https://github.com/user-attachments/assets/f06fdf33-99e2-4a67-84e8-8cbc323bf4dd" />
 
