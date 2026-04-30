@@ -241,9 +241,6 @@ Implementată prin tabelul asociativ PROIECT_DOMENIU, deoarece:
 ## Diagrama ERD
 <img width="691" height="569" alt="image" src="https://github.com/user-attachments/assets/66154726-cf3b-4111-9b4c-913d5c9f5186" />
 
-<img width="636" height="801" alt="Diagramă fără titlu" src="https://github.com/user-attachments/assets/6ae0801a-f2b6-48ae-80fd-553b13db8a25" />
-
-
 ## Diagrama conceptuala 
 <img width="845" height="702" alt="image" src="https://github.com/user-attachments/assets/9fcb5737-945e-48a8-9cdd-8f16b4cc39b3" />
 
