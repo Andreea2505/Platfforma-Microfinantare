@@ -187,28 +187,21 @@ Documentele asociate unui proiect dupa aprobarea acestuia.
 
 ---
 
-### 6) Contract : Investitie (1:N(0))
-
-- un contract poate avea mai multe investiții asociate
-- o investiție îi aparține unui singur contract
-
----
-
-### 7) Contract : Plan Rambursare (1:1)
+### 6) Contract : Plan Rambursare (1:1)
 
 - unui contract îi este asociat un plan unic de rambursare
 - fiecare plan de rambursare este creat pentru un contract unic
 
 ---
 
-### 8) Plan Rambursare : Rata (1:N(1))
+### 7) Plan Rambursare : Rata (1:N(1))
 
 - un plan de rambursare este organizat în mai multe rate
 - fiecare rată îi aparține unui plan de rambursare unic
 
 ---
 
-### 9) Proiect : Domeniu (M:N)
+### 8) Proiect : Domeniu (M:N)
 
 Implementată prin tabelul asociativ PROIECT_DOMENIU, deoarece:
 
@@ -217,19 +210,19 @@ Implementată prin tabelul asociativ PROIECT_DOMENIU, deoarece:
 
 ---
 
-### 10) Contract : Proiect (1:1)
+### 9) Contract : Proiect (1:1)
 
 - unui contract se creează pentru un singur proiect
 - unui proiect îi corespunde un singur contract
 
 ---
-### 11) Rata : Tranzactie_Rata (1:N)
+### 10) Rata : Tranzactie_Rata (1:N)
 
 - o rata poate avea mai multe tranzactii
 - o tranzactie apatine unei singure rate 
 
 ---
-### 12) Cerere_Finantare : Document  (1:N)
+### 11) Cerere_Finantare : Document  (1:N)
 
 - o cerere de finantare poate avea mai multe documente
 - un document ii corespunde unei singuri cereri de finantare 
