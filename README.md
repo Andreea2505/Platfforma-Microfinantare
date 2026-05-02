@@ -11,7 +11,7 @@ Proiectul reprezintă o platformă de microfinanțare. Acesta gestionează modal
 Un beneficiar creează un proiect. Pentru proiectul respectiv se creează o cerere de finanțare, în cadrul căreia se stabilește dacă proiectul este eligibil de finanțare sau nu. Dacă proiectul este aprobat, primește finanțare si se creeaza documentele.
 
 Investitorii sunt persoanele care finanțează proiectele. Un investitor poate investi în mai multe proiecte și un proiect poate fi finanțat de mai mulți investitori. După ce suficienți investitori fac investiții într-un proiect, se creează contractul, care este unic per proiect.
-
+Fiecare investititie este intermediata de un agent,o entitate independenta,fiecare agent adaugand un comision propriu pentru realizarea tranzactiei.
 Pentru suma din contract se stabilește planul de rambursare, plata sumei fiind împărțită în rate si acestea la randul lor in tranzactii.
 
 ---
@@ -86,7 +86,7 @@ Contribuția unui investitor la un proiect eligibil de finanțare în baza contr
 **Atribute:**
 - id_investitor (PK, FK) – referință către investitor
 - id_proiect (PK, FK) – referință către proiect
-- id_contract (PK, FK) – referință către contract
+- id_agent (PK, FK) – referință către agent 
 - suma_investita
 - data_investitie
 
@@ -145,6 +145,15 @@ Documentele asociate unui proiect dupa aprobarea acestuia.
 - nume_fisier
 - data_incarcare
 - id_proiect (FK)
+
+---
+### 13)AGENT
+Persoana care intermediaza investitia.
+
+**Atribute:**
+- id_agent (PK)
+- tip_agent
+- comision
 
 ---
 
@@ -227,6 +236,11 @@ Implementată prin tabelul asociativ PROIECT_DOMENIU, deoarece:
 - o cerere de finantare poate avea mai multe documente
 - un document ii corespunde unei singuri cereri de finantare 
 ---
+### 11) Agent : Investite  (1:N)
+
+- un agent poate intermedia mai multe investitii
+-o investite poate fii intermediata de un singur agent 
+---
 
 ## IV) Restricții impuse
 
@@ -239,9 +253,10 @@ Implementată prin tabelul asociativ PROIECT_DOMENIU, deoarece:
 ---
 
 ## Diagrama ERD
-<img width="691" height="569" alt="image" src="https://github.com/user-attachments/assets/66154726-cf3b-4111-9b4c-913d5c9f5186" />
+<img width="827" height="569" alt="image" src="https://github.com/user-attachments/assets/29133238-1a96-487a-bba4-78485a32c8b6" />
 
 ## Diagrama conceptuala 
-<img width="845" height="702" alt="image" src="https://github.com/user-attachments/assets/9fcb5737-945e-48a8-9cdd-8f16b4cc39b3" />
+<img width="1008" height="702" alt="image" src="https://github.com/user-attachments/assets/6d13e7eb-ea67-48f9-b292-aff41e72e179" />
+
 
 ---
