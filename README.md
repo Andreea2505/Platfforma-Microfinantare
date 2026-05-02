@@ -249,7 +249,7 @@ Implementată prin tabelul asociativ PROIECT_DOMENIU, deoarece:
 - Suma totală a investițiilor pentru un proiect trebuie să fie egală sau mai mare decât suma necesară
 - Numărul de rate trebuie să fie pozitiv și stabilit la crearea planului de rambursare
 - Un proiect trebuie să aparțină cel puțin unui domeniu
-- Nu pot exista investtii fara contract
+- Nu pot exista investitii fara agent
 ---
 
 ## Diagrama ERD
