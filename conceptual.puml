@@ -38,7 +38,7 @@ entity CONTRACT {
 entity INVESTITIE {
   +id_investitor : int <<PK,FK>>
   +id_proiect : int <<PK,FK>>
-  +id_contract : int <<PK,FK>>
+  +id_agent : int <<PK,FK>>
   suma_investita : number
   data_investitie : date
 }
@@ -82,6 +82,12 @@ entity DOCUMENT {
   data_incarcare : date
   id_proiect : int <<FK>>
 }
+entity AGENT {
+  +id_agent : int <<PK>>
+  tip_agent : varchar
+  comision : number
+  
+}
 BENEFICIAR ||--o{ PROIECT
 PROIECT ||--|| CERERE_FINANTARE
 
@@ -97,5 +103,6 @@ DOMENIU ||--o{ PROIECT_DOMENIU
 
 RATA ||--o{ TRANZACTIE_RATA
 CERERE_FINANTARE ||--o{ DOCUMENT
+AGENT ||--o{ INVESTITIE
 
 @enduml
