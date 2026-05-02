@@ -239,7 +239,7 @@ Implementată prin tabelul asociativ PROIECT_DOMENIU, deoarece:
 ### 11) Agent : Investite  (1:N)
 
 - un agent poate intermedia mai multe investitii
--o investite poate fii intermediata de un singur agent 
+- o investite poate fii intermediata de un singur agent 
 ---
 
 ## IV) Restricții impuse
