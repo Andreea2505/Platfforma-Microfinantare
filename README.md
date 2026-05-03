@@ -245,7 +245,7 @@ Implementată prin tabelul asociativ PROIECT_DOMENIU, deoarece:
 ## IV) Restricții impuse
 
 - Un proiect nu poate avea contract dacă nu este finanțat complet
-- Investițiile pot fi realizate doar după existența unui contract
+- Un contract e realizat daca cererea de finantare e aprobata
 - Suma totală a investițiilor pentru un proiect trebuie să fie egală cu suma solicitata in cererea de finantare
 - Suma totala,din planul de rambursare reprezinta suma solicitata la care se adauga comisionul agentilor si dobanda stabilita in contrat 
 - Numărul de rate trebuie să fie pozitiv și stabilit la crearea planului de rambursare
