@@ -72,9 +72,7 @@ Acordul financiar încheiat odată ce cererea de finanțare este aprobată și p
 
 **Atribute:**
 - id_contract (PK)
-- data_semnare
 - dobanda
-- durata_luni
 - id_proiect (FK)
 
 ---
